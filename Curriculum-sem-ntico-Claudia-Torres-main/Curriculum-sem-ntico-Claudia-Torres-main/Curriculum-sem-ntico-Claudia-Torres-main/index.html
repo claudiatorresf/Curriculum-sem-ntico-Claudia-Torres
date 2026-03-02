@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curiculum semántico con html 5">
+    <link rel="stylesheet" href= "Css/style.Css">
+    <title>Curriculum semántico</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            
+           <h2>Claudia Torres Fernández</h2>
+            <nav class="nav ul">
+                <ul>
+                 <li> <a href="https://www.instagram.com/claaudia.torress/">Instagram</a></li>
+                 <li> <a href="https://www.linkedin.com/in/claudia-torres-fern%C3%A1ndez-341696342/">linkedin</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <section>
+            <img src="Imágenes/Foto mía.jpg" alt="Fotografía de Claudia Torres" width="200px">
+        </section>
+    </header>
+    <main>
+        <section>
+            <article id="perfil">
+                <h3>Perfil</h3>
+                <p>
+                    Mi nombre es Claudia Torres Fernández, nací en el año <strong>2006</strong> en la isla de Ibiza y actualmente tengo <strong>19 </strong>años. Desde hace dos años resido en el centro de Valencia, donde estudio la carrera de Diseño Gráfico y Tecnologías Creativas en la Universidad Europea de Valencia, formándome en áreas creativas, técnicas y digitales vinculadas a la comunicación visual y el diseño.
+                </p>
+            </article>
+        </section>
+        <div id="flex">
+            <section class="detalles">
+                <article>
+                    <h3>Experiencia</h3>
+                    <section class="Fechas">
+                        <p>
+                            <strong>2024/2025</strong> 
+                        </p>
+                        <p>
+                            <strong> Proyectos académicos</strong>
+                        </p>
+                     </section>
+                        <p>
+                            He trabajado con proyectos reales, donde he participado en el desarrollo de <em>identidades visuales, diseño editorial y creación de contenido digital.</em> 
+                        </p>
+                        <p>
+                            A lo largo de mi formación en Diseño Gráfico y Tecnologías Creativas, he aplicado herramientas de diseño y metodologías profesionales, trabajando con objetivos y plazos definidos. 
+                        </p>
+                        <p>
+                            Destaco por mi creatividad, capacidad de adaptación, atención al detalle y buen trabajo en equipo, así como por mi interés en seguir aprendiendo y creciendo dentro del ámbito del diseño.
+                        </p>
+                </article>
+            </section>
+            <section class="detalles">
+                <article>
+                    <h3>Educación</h3>
+                    
+        
+                    <strong>2018/2022</strong>
+                    </p>
+                    <p>
+                        Obtuve el título de <em>Educación Secundaria Obligatoria (ESO)</em> con calificación de sobresaliente, lo que refleja mi constancia y compromiso con el estudio. 
+                    <p>
+                        <strong>2022/2024</strong>
+                    </p>
+                    <p>
+                        Posteriormente cursé el <em>Bachillerato Social</em>, donde adquirí una base formativa en áreas como economía, ciencias sociales y pensamiento analítico, complementando mi perfil creativo.
+                    </p>
+                    <p>
+                        Superé las <em>pruebas de acceso a la universidad</em>  (Selectividad). 
+                    </p>
+                    <p>
+                        <strong>2025</strong>
+                    </p>
+                    <p>
+                        Actualmente me encuentro cursando la carrera de <em>Diseño Gráfico y Tecnologías Creativas</em> en la UEV, donde continúo desarrollando conocimientos técnicos, creativos y digitales aplicados al ámbito del diseño y la comunicación visual.
+                    </p>
+                </article>
+            </section>
+            <section class="detalles">
+                <article>
+                    <h3>Habilidades</h3>
+                        <p>
+                            Perfil creativo y proactivo.
+                         </p>
+                        <p>
+                            Habilidades en diseño gráfico, comunicación visual y uso de herramientas digitales aplicadas a proyectos creativos.
+                        </p> 
+                        <p>
+                            Destaco por mi capacidad de organización, atención al detalle y gestión del tiempo.
+                        </p>
+                        <p>
+                            Tengo facilidad para el aprendizaje continuo, buena adaptabilidad a nuevos entornos y una actitud responsable frente a los retos profesionales. 
+                         </p>
+                         <p>
+                            Habilidades de comunicación, pensamiento creativo y resolución de problemas, orientadas a ofrecer soluciones visuales eficaces.
+                        </p>
+                </article>
+            </section>
+        </div>
+        <section class="detalles">
+            <h3>Contacta conmigo</h3>
+       
+        <form action="procesar.php" method="post" autocomplete="on">
+        <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="formName" placeholder="Nombre y apellidos" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="=email" name="email" placeholder="Escribe tu email" required>                  
+        </div>
+
+     
+        <div class="form-group">
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="Escribe tu teléfono"required>
+        </div>
+
+
+        <div class="form-group">
+            <select name="servicio" id="servicio">
+                <option value="" selected>Tipo entrevista</option>
+                <option value="branding">Entrevista presencial</option>
+                <option value="web">Entrevista online</option>
+                <option value="uxui">Llamada telefónica inicial</option>
+            </select>
+
+            <label for="fecha">Fecha sugerida</label>
+            <input type="date" name="fecha" id="fecha">
+
+            <label for="Nivel de urgencia">Nivel de urgencia</label>
+            <input type="range" min= "1" max= "6" name="Nivel de urgencia" id="urgencia">
+        </div>
+    
+        <div class="form-group" id="servicio">
+            <label for="mensaje">Mensaje adicional</label>
+            <textarea name="mensaje" id="mensaje" rows="4" cols="40" placeholder="tu mensaje"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </div>
+         </section>
+
+    </main>
+    
+</body>
+</html>
